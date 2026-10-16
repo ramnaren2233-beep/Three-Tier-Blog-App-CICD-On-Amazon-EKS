@@ -1,7 +1,5 @@
 # Task 1: Application
 
-## Work Completed
-
 | S.No | What I Did | Status |
 |---|---|---|
 | 1 | Created EC2 instance (Amazon Linux 2023) | Completed |
