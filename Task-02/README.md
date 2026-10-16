@@ -1,6 +1,6 @@
 # Task 2: Docker
 
-### Work Completed
+## Work Completed
 
 | S.No | What I Did | Status |
 |---|---|---|
@@ -36,15 +36,15 @@
 
 **Folder:** `Task2_Screenshots/`
 
-| S.No | Screenshot Name | What It Shows |
-|---|---|---|
-| 1 | `Task2_1_Backend_Dockerfile.png` | Backend Dockerfile and `.dockerignore` |
-| 2 | `Task2_2_Backend_Build.png` | Backend image build output |
-| 3 | `Task2_3_Frontend_Dockerfile.png` | Frontend Dockerfile and `.dockerignore` |
-| 4 | `Task2_4_Frontend_Build.png` | Frontend image build output |
-| 5 | `Task2_5_Docker_Images.png` | `docker images` showing both images |
-| 6 | `Task2_6_Containers_Healthy.png` | `docker ps` showing both containers healthy |
-| 7 | `Task2_7_NonRoot_And_Working.png` | `whoami` output (non-root) and API response with 4 posts |
+| S.No | Screenshot Name |
+|---|---|
+| 1 | `Task2_1_Backend_Dockerfile.png` |
+| 2 | `Task2_2_Backend_Build.png` |
+| 3 | `Task2_3_Frontend_Dockerfile.png` |
+| 4 | `Task2_4_Frontend_Build.png` |
+| 5 | `Task2_5_Docker_Images.png` |
+| 6 | `Task2_6_Containers_Healthy.png` |
+| 7 | `Task2_7_NonRoot_And_Working.png` |
 
 ---
 
