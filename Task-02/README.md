@@ -1,6 +1,6 @@
 # Task 2: Docker
 
-## Work Completed
+### Work Completed
 
 | S.No | What I Did | Status |
 |---|---|---|
