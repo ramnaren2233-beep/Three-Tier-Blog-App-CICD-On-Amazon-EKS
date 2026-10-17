@@ -13,7 +13,9 @@
 | 9 | StatefulSet YAML (volumeClaimTemplates, Secret reference) | Completed |
 | 10 | Backend connected to database, working application | Completed |
 
-| S.No | Screenshot Name |
+### Screenshots Name
+
+| S.No | Screenshot|
 |---|---|
 | 1 | 01-db-statefulset-pods-svc |
 | 2 | 02-db-secret |
