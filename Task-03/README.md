@@ -1,5 +1,4 @@
-
-## Task 3: Database (Option A: MySQL on Kubernetes-StatefulSet)
+# Task 3: Database (Option A: MySQL on Kubernetes-StatefulSet)
 
 | S.No | What I Did | Status |
 |---|---|---|
@@ -11,6 +10,8 @@
 | 6 | Pod deleted and recreated, Running | Completed |
 | 7 | Same data after pod recreation | Completed |
 | 8 | NetworkPolicy (Backend-only access) | Completed |
+| 9 | StatefulSet YAML (volumeClaimTemplates, Secret reference) | Completed |
+| 10 | Backend connected to database, working application | Completed |
 
 | S.No | Screenshot Name |
 |---|---|
@@ -22,5 +23,24 @@
 | 6 | 06-pod-delete-recreate |
 | 7 | 07-data-after-pod-recreate |
 | 8 | 10-networkpolicy |
+| 9 | 09-statefulset-yaml |
+| 10 | 08-working-app-evidence |
+
+## Implementation Highlights
+
+| S.No | Implementation Detail | Status |
+|---|---|---|
+| 1 | Database deployed on Amazon EKS using MySQL 8.0 StatefulSet | Completed |
+| 2 | Headless Service (clusterIP: None) for stable DB network identity | Completed |
+| 3 | Persistent storage using volumeClaimTemplates (5Gi, gp2, ReadWriteOnce) | Completed |
+| 4 | EBS CSI driver running for dynamic volume provisioning | Completed |
+| 5 | Credentials injected from Kubernetes Secret (db-secret), not hardcoded in YAML | Completed |
+| 6 | Database and tables initialized from init.sql using ConfigMap (db-init) | Completed |
+| 7 | subPath mount used to avoid lost+found issue on EBS volume | Completed |
+| 8 | Readiness and liveness probes configured using mysqladmin ping | Completed |
+| 9 | CPU and memory requests and limits configured | Completed |
+| 10 | NetworkPolicy allows only Backend pods (app: backend) on port 3306 | Completed |
+| 11 | Data retained after database pod deletion and recreation | Completed |
+| 12 | Backend connects using DB_HOST=mysql, DB_PORT=3306, DB_NAME=blogdb | Completed |
 
 ## Task 3: Completed
