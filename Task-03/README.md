@@ -1,5 +1,5 @@
 
-# Task 3: Database (Option A: MySQL on Kubernetes, StatefulSet)
+## Task 3: Database (Option A: MySQL on Kubernetes-StatefulSet)
 
 | S.No | What I Did | Status |
 |---|---|---|
