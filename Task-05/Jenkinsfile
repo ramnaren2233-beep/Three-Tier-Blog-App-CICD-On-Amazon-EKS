@@ -3,9 +3,8 @@ pipeline {
 
     environment {
         VERSION = "${BUILD_NUMBER}"
-        AWS_ACCOUNT_ID = "906543084508"
-        ECR = "906543084508.dkr.ecr.ap-south-1.amazonaws.com"
-        REGION = "ap-south-1"
+        ECR     = "906543084508.dkr.ecr.ap-south-1.amazonaws.com"
+        REGION  = "ap-south-1"
     }
 
     stages {
@@ -22,13 +21,7 @@ pipeline {
                     def scannerHome = tool 'sonar-scanner'
 
                     withSonarQubeEnv('SonarQube-Server') {
-                        sh """
-                            ${scannerHome}/bin/sonar-scanner \
-                            -Dsonar.projectKey=three-tier-blog-app \
-                            -Dsonar.projectName=three-tier-blog-app \
-                            -Dsonar.sources=. \
-                            -Dsonar.java.binaries=.
-                        """
+                        sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=three-tier-blog-app -Dsonar.projectName=three-tier-blog-app -Dsonar.sources=. -Dsonar.java.binaries=."
                     }
                 }
             }
