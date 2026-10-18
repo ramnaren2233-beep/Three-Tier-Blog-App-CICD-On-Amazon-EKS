@@ -15,12 +15,12 @@
 
 | Screenshot S.No | Screenshot Name | Status |
 |---|---|---|
-| 1 | `Task-05-01-SonarQube-Server-UP.png` | Completed |
-| 2 | `Task-05-02-SonarQube-Project-Dashboard.png` | Completed |
-| 3 | `Task-05-03-Jenkins-SonarQube-Analysis.png` | Completed |
-| 4 | `Task-05-04-Jenkins-Quality-Gate-Passed.png` | Completed |
-| 5 | `Task-05-05-Jenkins-Pipeline-Stage-View.png` | Completed |
-| 6 | `Task-05-06-Quality-Gate-Failure-Test.png` | Completed |
+|  1 | `Task-05-01-SonarQube-Server-UP.png` | Completed |
+|  2 | `Task-05-02-SonarQube-Project-Dashboard.png` | Completed |
+|  3 | `Task-05-03-Jenkins-SonarQube-Analysis.png` | Completed |
+|  4 | `Task-05-04-Jenkins-Quality-Gate-Passed.png` | Completed |
+|  5 | `Task-05-05-Jenkins-Pipeline-Stage-View.png` | Completed |
+|  6 | `Task-05-06-Quality-Gate-Failure-Test.png` | Completed |
 
 ## Final Task Status
 
