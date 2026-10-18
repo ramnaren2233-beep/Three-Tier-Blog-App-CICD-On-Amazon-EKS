@@ -1,0 +1,29 @@
+pipeline {
+  agent any
+  environment {
+    VERSION = "${BUILD_NUMBER}"
+    NEXUS   = "3.110.171.20:8083"
+  }
+  stages {
+    stage('Build') {
+      steps {
+        sh 'docker build -t frontend:${VERSION} ./frontend'
+        sh 'docker build -t backend:${VERSION} ./backend'
+      }
+    }
+    stage('Push to Nexus') {
+      steps {
+        withCredentials([usernamePassword(credentialsId: 'nexus-creds',
+            usernameVariable: 'U', passwordVariable: 'P')]) {
+          sh '''
+            echo $P | docker login $NEXUS -u $U --password-stdin
+            docker tag frontend:${VERSION} $NEXUS/frontend:${VERSION}
+            docker tag backend:${VERSION} $NEXUS/backend:${VERSION}
+            docker push $NEXUS/frontend:${VERSION}
+            docker push $NEXUS/backend:${VERSION}
+          '''
+        }
+      }
+    }
+  }
+}
