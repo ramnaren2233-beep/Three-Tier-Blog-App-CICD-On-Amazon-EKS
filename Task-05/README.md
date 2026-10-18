@@ -1,9 +1,9 @@
-# Task 5: SonarQube-Integration
+# Task 5: SonarQube Integration
 
 ## Task Details
 
 | S.No | What I Did | Status |
-|---|---|---|
+|:---:|---|:---:|
 | 1 | Integrated SonarQube with the Jenkins CI/CD pipeline. | Completed |
 | 2 | Configured the SonarQube Scanner tool in Jenkins. | Completed |
 | 3 | Executed SonarQube code-quality analysis for the project. | Completed |
@@ -13,14 +13,14 @@
 
 ## Screenshot Details
 
-| Screenshot S.No | Screenshot Name | Status |
-|---|---|---|
-|  1 | `Task-05-01-SonarQube-Server-UP.png` | Completed |
-|  2 | `Task-05-02-SonarQube-Project-Dashboard.png` | Completed |
-|  3 | `Task-05-03-Jenkins-SonarQube-Analysis.png` | Completed |
-|  4 | `Task-05-04-Jenkins-Quality-Gate-Passed.png` | Completed |
-|  5 | `Task-05-05-Jenkins-Pipeline-Stage-View.png` | Completed |
-|  6 | `Task-05-06-Quality-Gate-Failure-Test.png` | Completed |
+| S.No | Screenshot Name | Status |
+|:---:|---|:---:|
+| 1 | `Task-05-01-SonarQube-Server-UP.png` | Completed |
+| 2 | `Task-05-02-SonarQube-Project-Dashboard.png` | Completed |
+| 3 | `Task-05-03-Jenkins-SonarQube-Analysis.png` | Completed |
+| 4 | `Task-05-04-Jenkins-Quality-Gate-Passed.png` | Completed |
+| 5 | `Task-05-05-Jenkins-Pipeline-Stage-View.png` | Completed |
+| 6 | `Task-05-06-Quality-Gate-Failure-Test.png` | Completed |
 
 ## Final Task Status
 
