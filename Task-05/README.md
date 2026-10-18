@@ -4,12 +4,12 @@
 
 | S.No | What I Did | Status |
 |---|---|---|
-| 5.1 | Integrated SonarQube with the Jenkins CI/CD pipeline. | Completed |
-| 5.2 | Configured the SonarQube Scanner tool in Jenkins. | Completed |
-| 5.3 | Executed SonarQube code-quality analysis for the project. | Completed |
-| 5.4 | Configured the Quality Gate Check with a five-minute timeout. | Completed |
-| 5.5 | Configured the pipeline to stop when the Quality Gate status is not "OK". | Completed |
-| 5.6 | Integrated the Quality Gate Check before the Push to ECR stage. | Completed |
+| 1 | Integrated SonarQube with the Jenkins CI/CD pipeline. | Completed |
+| 2 | Configured the SonarQube Scanner tool in Jenkins. | Completed |
+| 3 | Executed SonarQube code-quality analysis for the project. | Completed |
+| 4 | Configured the Quality Gate Check with a five-minute timeout. | Completed |
+| 5 | Configured the pipeline to stop when the Quality Gate status is not "OK". | Completed |
+| 6 | Integrated the Quality Gate Check before the Push to ECR stage. | Completed |
 
 ## Screenshot Details
 
