@@ -4,8 +4,8 @@ pipeline {
     environment {
         VERSION = "${BUILD_NUMBER}"
         AWS_ACCOUNT_ID = "906543084508"
-        REGION = "ap-south-1"
         ECR = "906543084508.dkr.ecr.ap-south-1.amazonaws.com"
+        REGION = "ap-south-1"
     }
 
     stages {
@@ -25,8 +25,11 @@ pipeline {
                         sh """
                             ${scannerHome}/bin/sonar-scanner \
                             -Dsonar.projectKey=three-tier-blog-app \
+                            -Dsonar.projectName=three-tier-blog-app \
                             -Dsonar.sources=. \
-                            -Dsonar.host.url=http://35.154.96.135:9000
+                            -Dsonar.host.url=http://35.154.96.135:9000 \
+                            -Dsonar.login=\$SONAR_TOKEN \
+                            -Dsonar.java.binaries=.
                         """
                     }
                 }
