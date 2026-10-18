@@ -2,7 +2,8 @@ pipeline {
   agent any
   environment {
     VERSION = "${BUILD_NUMBER}"
-    NEXUS   = "172.31.8.25:8082"
+    ECR     = "906543084508.dkr.ecr.ap-south-1.amazonaws.com"
+    REGION  = "ap-south-1"
   }
   stages {
     stage('Build') {
@@ -11,18 +12,15 @@ pipeline {
         sh 'docker build -t backend:${VERSION} ./Task-04/backend'
       }
     }
-    stage('Push to Nexus') {
+    stage('Push to ECR') {
       steps {
-        withCredentials([usernamePassword(credentialsId: 'nexus-creds',
-            usernameVariable: 'U', passwordVariable: 'P')]) {
-          sh '''
-            echo $P | docker login $NEXUS -u $U --password-stdin
-            docker tag frontend:${VERSION} $NEXUS/frontend:${VERSION}
-            docker tag backend:${VERSION} $NEXUS/backend:${VERSION}
-            docker push $NEXUS/frontend:${VERSION}
-            docker push $NEXUS/backend:${VERSION}
-          '''
-        }
+        sh '''
+          aws ecr get-login-password --region $REGION | docker login --username AWS --password-stdin $ECR
+          docker tag frontend:${VERSION} $ECR/blog-frontend:${VERSION}
+          docker tag backend:${VERSION} $ECR/blog-backend:${VERSION}
+          docker push $ECR/blog-frontend:${VERSION}
+          docker push $ECR/blog-backend:${VERSION}
+        '''
       }
     }
   }
