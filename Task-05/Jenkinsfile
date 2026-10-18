@@ -27,8 +27,6 @@ pipeline {
                             -Dsonar.projectKey=three-tier-blog-app \
                             -Dsonar.projectName=three-tier-blog-app \
                             -Dsonar.sources=. \
-                            -Dsonar.host.url=http://35.154.96.135:9000 \
-                            -Dsonar.login=\$SONAR_TOKEN \
                             -Dsonar.java.binaries=.
                         """
                     }
