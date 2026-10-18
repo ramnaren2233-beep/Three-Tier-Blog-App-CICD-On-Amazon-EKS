@@ -1,4 +1,4 @@
-# Task 5: SonarQube Integration
+# Task 5: SonarQube-Integration
 
 ## Task Details
 
