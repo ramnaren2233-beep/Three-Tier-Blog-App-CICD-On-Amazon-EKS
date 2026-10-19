@@ -1,0 +1,75 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Verify Trivy and Images') {
+            steps {
+                sh '''
+                    set -e
+                    command -v trivy
+                    docker image inspect frontend:18 >/dev/null
+                    docker image inspect backend:18 >/dev/null
+                    mkdir -p Task-06
+                '''
+            }
+        }
+
+        stage('Scan Frontend and Backend') {
+            steps {
+                sh '''
+                    set -e
+
+                    trivy image \
+                      --format table \
+                      --output Task-06/trivy-frontend-jenkins-report.txt \
+                      frontend:18
+
+                    trivy image \
+                      --format table \
+                      --output Task-06/trivy-backend-jenkins-report.txt \
+                      backend:18
+                '''
+            }
+        }
+
+        stage('Block Deployment on High or Critical') {
+            steps {
+                sh '''
+                    set +e
+
+                    trivy image \
+                      --severity HIGH,CRITICAL \
+                      --exit-code 1 \
+                      frontend:18
+                    FRONTEND_STATUS=$?
+
+                    trivy image \
+                      --severity HIGH,CRITICAL \
+                      --exit-code 1 \
+                      backend:18
+                    BACKEND_STATUS=$?
+
+                    if [ "$FRONTEND_STATUS" -ne 0 ] || [ "$BACKEND_STATUS" -ne 0 ]; then
+                        echo "BLOCKED: HIGH or CRITICAL vulnerabilities detected."
+                        exit 1
+                    fi
+
+                    echo "PASS: No HIGH or CRITICAL vulnerabilities detected."
+                '''
+            }
+        }
+    }
+
+    post {
+        always {
+            archiveArtifacts artifacts: 'Task-06/trivy-*-jenkins-report.txt',
+                             allowEmptyArchive: true
+        }
+    }
+}
