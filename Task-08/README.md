@@ -2,7 +2,7 @@
 
 ### Implementation Status
 
-| S.No | Assignment Requirement | Status |
+| S.No | What i did | Status |
 |---:|---|---|
 | 1 | Multiple Frontend Replicas | ✅ Completed |
 | 2 | Multiple Backend Replicas | ✅ Completed |
