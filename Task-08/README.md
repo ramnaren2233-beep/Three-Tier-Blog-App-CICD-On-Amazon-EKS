@@ -2,7 +2,7 @@
 
 ### Implementation Status
 
-| S.No | What i did | Status |
+| S.No | What I Did | Status |
 |---:|---|---|
 | 1 | Multiple Frontend Replicas | ✅ Completed |
 | 2 | Multiple Backend Replicas | ✅ Completed |
@@ -31,3 +31,4 @@
 ### Final Status
 
 **Task 8 – Kubernetes Deployment: Completed**
+
