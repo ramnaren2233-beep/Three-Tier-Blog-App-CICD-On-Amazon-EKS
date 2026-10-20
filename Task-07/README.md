@@ -1,4 +1,4 @@
-## Task 7: Amazon EKS Deployment
+## Task 7: Amazon-EKS-Deployment
 
 ### Implementation Status
 
