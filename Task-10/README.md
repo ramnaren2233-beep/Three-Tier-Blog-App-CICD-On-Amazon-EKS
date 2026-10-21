@@ -1,4 +1,4 @@
-# Task 10: CI/CD Pipeline on Amazon EKS
+# Task 10: CI/CD-Pipeline
 
 ## Pipeline Stages and Status
 
