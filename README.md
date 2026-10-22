@@ -4,15 +4,15 @@
 
 A production-oriented Three-Tier Blog Application deployed on Amazon EKS using Jenkins CI/CD, Docker, SonarQube, Trivy, Nexus/ECR, Kubernetes, Prometheus and Grafana.
 
-| **Field**                | **Details**                                                                                                 |
-|--------------------------|-------------------------------------------------------------------------------------------------------------|
-| Project Name             | Three-Tier Blog Application CI/CD on Amazon EKS                                                             |
-| Tools Used               | AWS, Amazon EKS, Docker, Kubernetes, Jenkins, SonarQube, Trivy, Nexus/ECR, Prometheus, Grafana              |
-| Application Architecture | Frontend → Backend API → MySQL Database                                                                     |
-| CI/CD Pipeline           | GitHub → Jenkins → Build & Test → SonarQube → Docker → Trivy → Nexus/ECR → EKS                              |
-| GitHub Repository        | [Open Project Repository](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS)      |
-| Application URL          | [Open Blog Application](http://a61a39df109894f3798c66e3ec4fda31-817282873.us-east-1.elb.amazonaws.com/)     |
-| Final Submission         | Task README, Screenshots and Execution Evidence                                                             |
+| **Field** | **Details** |
+|---|---|
+| Project Name | Three-Tier Blog Application CI/CD on Amazon EKS |
+| Tools Used | AWS, Amazon EKS, Docker, Kubernetes, Jenkins, SonarQube, Trivy, Nexus/ECR, Prometheus, Grafana |
+| Application Architecture | Frontend → Backend API → MySQL Database |
+| CI/CD Pipeline | GitHub → Jenkins → Build & Test → SonarQube → Docker → Trivy → Nexus/ECR → EKS |
+| GitHub Repository | [Open Project Repository](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS) |
+| Application URL | [Open Blog Application](http://a61a39df109894f3798c66e3ec4fda31-817282873.us-east-1.elb.amazonaws.com/) |
+| Final Submission | Task README, Screenshots and Execution Evidence |
 
 ---
 
@@ -52,22 +52,22 @@ A production-oriented Three-Tier Blog Application deployed on Amazon EKS using J
 
 ## 3. Task README & Screenshots
 
-| S.No | Task Topic              | README Link                           | Screenshot Link                               |
-|-----:|-------------------------|---------------------------------------|-----------------------------------------------|
-|   01 | Application             | [Task 01 README](./Task-01/README.md) | [Task 01 Screenshots](./Task-01/Screenshots/) |
-|   02 | Docker                  | [Task 02 README](./Task-02/README.md) | [Task 02 Screenshots](./Task-02/Screenshots/) |
-|   03 | Database                | [Task 03 README](./Task-03/README.md) | [Task 03 Screenshots](./Task-03/Screenshots/) |
-|   04 | Nexus / ECR Repository  | [Task 04 README](./Task-04/README.md) | [Task 04 Screenshots](./Task-04/Screenshots/) |
-|   05 | SonarQube               | [Task 05 README](./Task-05/README.md) | [Task 05 Screenshots](./Task-05/Screenshots/) |
-|   06 | Trivy Security Scan     | [Task 06 README](./Task-06/README.md) | [Task 06 Screenshots](./Task-06/Screenshots/) |
-|   07 | Amazon EKS              | [Task 07 README](./Task-07/README.md) | [Task 07 Screenshots](./Task-07/Screenshots/) |
-|   08 | Kubernetes Deployment   | [Task 08 README](./Task-08/README.md) | [Task 08 Screenshots](./Task-08/Screenshots/) |
-|   09 | Configuration & Secrets | [Task 09 README](./Task-09/README.md) | [Task 09 Screenshots](./Task-09/Screenshots/) |
-|   10 | Jenkins CI/CD Pipeline  | [Task 10 README](./Task-10/README.md) | [Task 10 Screenshots](./Task-10/Screenshots/) |
-|   11 | Rolling Deployment      | [Task 11 README](./Task-11/README.md) | [Task 11 Screenshots](./Task-11/Screenshots/) |
-|   12 | Prometheus & Grafana    | [Task 12 README](./Task-12/README.md) | [Task 12 Screenshots](./Task-12/Screenshots/) |
-|   13 | Logging                 | [Task 13 README](./Task-13/README.md) | [Task 13 Screenshots](./Task-13/Screenshots/) |
-|   14 | Security                | [Task 14 README](./Task-14/README.md) | [Task 14 Screenshots](./Task-14/Screenshots/) |
+| S.No | Task Topic | README Link | Screenshot Link |
+|---:|---|---|---|
+| 01 | Application | [Task 01 README](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/blob/main/Task-01/README.md) | [Task 01 Screenshots](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/tree/main/Task-01/Screenshots) |
+| 02 | Docker | [Task 02 README](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/blob/main/Task-02/README.md) | [Task 02 Screenshots](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/tree/main/Task-02/Screenshots) |
+| 03 | Database | [Task 03 README](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/blob/main/Task-03/README.md) | [Task 03 Screenshots](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/tree/main/Task-03/Screenshots) |
+| 04 | Nexus / ECR Repository | [Task 04 README](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/blob/main/Task-04/README.md) | [Task 04 Screenshots](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/tree/main/Task-04/Screenshots) |
+| 05 | SonarQube | [Task 05 README](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/blob/main/Task-05/README.md) | [Task 05 Screenshots](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/tree/main/Task-05/Screenshots) |
+| 06 | Trivy Security Scan | [Task 06 README](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/blob/main/Task-06/README.md) | [Task 06 Screenshots](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/tree/main/Task-06/Screenshot) |
+| 07 | Amazon EKS | [Task 07 README](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/blob/main/Task-07/README.md) | [Task 07 Screenshots](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/tree/main/Task-07/Screenshots) |
+| 08 | Kubernetes Deployment | [Task 08 README](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/blob/main/Task-08/README.md) | [Task 08 Screenshots](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/tree/main/Task-08/Screenshots) |
+| 09 | Configuration & Secrets | [Task 09 README](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/blob/main/Task-09/README.md) | [Task 09 Screenshots](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/tree/main/Task-09/Screenshots) |
+| 10 | Jenkins CI/CD Pipeline | [Task 10 README](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/blob/main/Task-10/README.md) | [Task 10 Screenshots](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/tree/main/Task-10/Screenshots) |
+| 11 | Rolling Deployment | [Task 11 README](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/blob/main/Task-11/README.md) | [Task 11 Screenshots](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/tree/main/Task-11/Screenshots) |
+| 12 | Prometheus & Grafana | [Task 12 README](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/blob/main/Task-12/README.md) | [Task 12 Screenshots](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/tree/main/Task-12/Screenshots) |
+| 13 | Logging | [Task 13 README](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/blob/main/Task-13/README.md) | [Task 13 Screenshots](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/tree/main/Task-13/Screenshots) |
+| 14 | Security | [Task 14 README](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/blob/main/Task-14/README.md) | [Task 14 Screenshots](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS/tree/main/Task-14/Screenshots) |
 
 ---
 
@@ -111,10 +111,10 @@ Developer Pushes Code to GitHub
 
 ## 5. Application URL
 
-| **Item**           | **Link / Details**                                                                                      |
-|--------------------|---------------------------------------------------------------------------------------------------------|
-| Live Application   | [Open Blog Application](http://a61a39df109894f3798c66e3ec4fda31-817282873.us-east-1.elb.amazonaws.com/) |
-| Project Repository | [Open GitHub Repository](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS)  |
+| **Item** | **Link / Details** |
+|---|---|
+| Live Application | [Open Blog Application](http://a61a39df109894f3798c66e3ec4fda31-817282873.us-east-1.elb.amazonaws.com/) |
+| Project Repository | [Open GitHub Repository](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS) |
 
 > The live endpoint depends on the AWS infrastructure remaining active. Keep screenshots of the application from the time it was running.
 
@@ -122,21 +122,21 @@ Developer Pushes Code to GitHub
 
 ## 6. Final Submission Checklist
 
-| S.No | Requirement             | Evidence                                           | Status       |
-|-----:|-------------------------|----------------------------------------------------|--------------|
-|   01 | Application Frontend    | Application screenshot                             | ✅ Completed |
-|   02 | Docker Images           | Build and container evidence                       | ✅ Completed |
-|   03 | Database                | Connectivity and persistence evidence              | ✅ Completed |
-|   04 | Nexus / ECR             | Versioned image evidence                           | ✅ Completed |
-|   05 | SonarQube               | Analysis and Quality Gate evidence                 | ✅ Completed |
-|   06 | Trivy                   | Vulnerability scan results                         | ✅ Completed |
-|   07 | Amazon EKS              | Kubernetes deployment evidence                     | ✅ Completed |
-|   08 | Kubernetes Deployment   | Replicas and health probes                         | ✅ Completed |
-|   09 | Configuration & Secrets | ConfigMap and Secret evidence                      | ✅ Completed |
-|   10 | Jenkins CI/CD           | Pipeline execution evidence                        | ✅ Completed |
-|   11 | Rolling Deployment      | Deployment rollout evidence                        | ✅ Completed |
-|   12 | Monitoring              | Prometheus and Grafana evidence                    | ✅ Completed |
-|   13 | Logging                 | Application and workload logs                      | ✅ Completed |
-|   14 | Security                | IAM, RBAC, network and container security evidence | ✅ Completed |
+| S.No | Requirement | Evidence | Status |
+|---:|---|---|---|
+| 01 | Application Frontend | Application screenshot | ✅ Completed |
+| 02 | Docker Images | Build and container evidence | ✅ Completed |
+| 03 | Database | Connectivity and persistence evidence | ✅ Completed |
+| 04 | Nexus / ECR | Versioned image evidence | ✅ Completed |
+| 05 | SonarQube | Analysis and Quality Gate evidence | ✅ Completed |
+| 06 | Trivy | Vulnerability scan results | ✅ Completed |
+| 07 | Amazon EKS | Kubernetes deployment evidence | ✅ Completed |
+| 08 | Kubernetes Deployment | Replicas and health probes | ✅ Completed |
+| 09 | Configuration & Secrets | ConfigMap and Secret evidence | ✅ Completed |
+| 10 | Jenkins CI/CD | Pipeline execution evidence | ✅ Completed |
+| 11 | Rolling Deployment | Deployment rollout evidence | ✅ Completed |
+| 12 | Monitoring | Prometheus and Grafana evidence | ✅ Completed |
+| 13 | Logging | Application and workload logs | ✅ Completed |
+| 14 | Security | IAM, RBAC, network and container security evidence | ✅ Completed |
 
 **Project:** Three-Tier Blog Application CI/CD Deployment on Amazon EKS
