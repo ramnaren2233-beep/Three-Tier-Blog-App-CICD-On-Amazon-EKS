@@ -12,7 +12,7 @@ A production-oriented Three-Tier Blog Application deployed on Amazon EKS using J
 | CI/CD Pipeline           | GitHub → Jenkins → Build & Test → SonarQube → Docker → Trivy → Nexus/ECR → EKS                              |
 | GitHub Repository        | [Open Project Repository](https://github.com/ramnaren2233-beep/Three-Tier-Blog-App-CICD-On-Amazon-EKS)      |
 | Application URL          | [Open Blog Application](http://a61a39df109894f3798c66e3ec4fda31-817282873.us-east-1.elb.amazonaws.com/)     |
-| Final Submission         | Task Documentation, Screenshots and Execution Evidence                                                      |
+| Final Submission         | Task README, Screenshots and Execution Evidence                                                             |
 
 ---
 
@@ -122,21 +122,21 @@ Developer Pushes Code to GitHub
 
 ## 6. Final Submission Checklist
 
-| S.No | Requirement             | Evidence                                           |
-|-----:|-------------------------|----------------------------------------------------|
-|   01 | Application Frontend    | Application screenshot                             |
-|   02 | Docker Images           | Build and container evidence                       |
-|   03 | Database                | Connectivity and persistence evidence              |
-|   04 | Nexus / ECR             | Versioned image evidence                           |
-|   05 | SonarQube               | Analysis and Quality Gate evidence                 |
-|   06 | Trivy                   | Vulnerability scan results                         |
-|   07 | Amazon EKS              | Kubernetes deployment evidence                     |
-|   08 | Kubernetes Deployment   | Replicas and health probes                         |
-|   09 | Configuration & Secrets | ConfigMap and Secret evidence                      |
-|   10 | Jenkins CI/CD           | Pipeline execution evidence                        |
-|   11 | Rolling Deployment      | Deployment rollout evidence                        |
-|   12 | Monitoring              | Prometheus and Grafana evidence                    |
-|   13 | Logging                 | Application and workload logs                      |
-|   14 | Security                | IAM, RBAC, network and container security evidence |
+| S.No | Requirement             | Evidence                                           | Status       |
+|-----:|-------------------------|----------------------------------------------------|--------------|
+|   01 | Application Frontend    | Application screenshot                             | ✅ Completed |
+|   02 | Docker Images           | Build and container evidence                       | ✅ Completed |
+|   03 | Database                | Connectivity and persistence evidence              | ✅ Completed |
+|   04 | Nexus / ECR             | Versioned image evidence                           | ✅ Completed |
+|   05 | SonarQube               | Analysis and Quality Gate evidence                 | ✅ Completed |
+|   06 | Trivy                   | Vulnerability scan results                         | ✅ Completed |
+|   07 | Amazon EKS              | Kubernetes deployment evidence                     | ✅ Completed |
+|   08 | Kubernetes Deployment   | Replicas and health probes                         | ✅ Completed |
+|   09 | Configuration & Secrets | ConfigMap and Secret evidence                      | ✅ Completed |
+|   10 | Jenkins CI/CD           | Pipeline execution evidence                        | ✅ Completed |
+|   11 | Rolling Deployment      | Deployment rollout evidence                        | ✅ Completed |
+|   12 | Monitoring              | Prometheus and Grafana evidence                    | ✅ Completed |
+|   13 | Logging                 | Application and workload logs                      | ✅ Completed |
+|   14 | Security                | IAM, RBAC, network and container security evidence | ✅ Completed |
 
 **Project:** Three-Tier Blog Application CI/CD Deployment on Amazon EKS
